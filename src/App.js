@@ -17,8 +17,8 @@ const App = () => {
   return (
     <div>
       <BrowserRouter>
+      <Title/>
       <CreateRoom/>
-      {/* <Title/> */}
         <Routes>
           
           <Route
