@@ -13,28 +13,21 @@ const App = () => {
   const [rooms, setRooms] = useState([]);
   const CreatedRoom = new Room(roomType, roomName, roomColor, roomProducts);
   const [index, setIndex] = useState(0);
+
   return (
     <div>
       <BrowserRouter>
-      <CreateRoom
-              roomName = {roomName}
-              roomProducts={roomProducts}
-              setRooms={setRooms}
-              room={CreatedRoom}
-              setRoomName={setRoomName}
-              setRoomType={setRoomType}
-              setRoomColor={setRoomColor}
-              />
-              <Title/> 
+      <Title/>
         <Routes>
+  
           <Route
-            path="./"
+            path="/"
             element={<HomePageRoom index2={index} setIndex={setIndex}  room={rooms} />}
           >
             {" "}
           </Route>
-          {/* <Route
-            path="./"
+          {<Route
+            path="/createroom"
             element={
               <CreateRoom
               roomName = {roomName}
@@ -48,9 +41,9 @@ const App = () => {
             }
           >
             {" "}
-          </Route> */}
+          </Route> }
           <Route
-            path="./room:id"
+            path="/room:id"
             element={
               <SpesificRoom
                 CreatedRoom={CreatedRoom}
