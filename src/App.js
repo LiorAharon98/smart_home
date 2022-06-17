@@ -3,7 +3,7 @@ import {Route, Routes, BrowserRouter } from "react-router-dom";
 import CreateRoom from "./componente/CreateRoom";
 import SpesificRoom from "./componente/SpesificRoom";
 import HomePageRoom from "./componente/HomePageRoom";
-import Title from "./componente/Title";
+// import Title from "./componente/Title";
 
 const App = () => {
   const [roomName, setRoomName] = useState("");
