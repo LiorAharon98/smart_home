@@ -11,22 +11,30 @@ const App = () => {
   const [roomColor, setRoomColor] = useState("");
   const [roomProducts, setRoomProducts] = useState("");
   const [rooms, setRooms] = useState([]);
-  const [spesificRoom, setSpesificRoom] = useState([]);
   const CreatedRoom = new Room(roomType, roomName, roomColor, roomProducts);
   const [index, setIndex] = useState(0);
   return (
     <div>
       <BrowserRouter>
-      <Title/>
+      {/* <Title/>
+      <CreateRoom
+              roomName = {roomName}
+              roomProducts={roomProducts}
+                setRooms={setRooms}
+                room={CreatedRoom}
+                setRoomName={setRoomName}
+                setRoomType={setRoomType}
+                setRoomColor={setRoomColor}
+              /> */}
         <Routes>
           <Route
-            path="https://lioraharon98.github.io/smart_home"
-            element={<HomePageRoom index2={index} setIndex={setIndex} setSpesificRoom={setSpesificRoom} room={rooms} />}
+            path="./"
+            element={<HomePageRoom index2={index} setIndex={setIndex}  room={rooms} />}
           >
             {" "}
           </Route>
-          <Route
-            path="https://lioraharon98.github.io/smart_home/createroom"
+          {/* <Route
+            path="./"
             element={
               <CreateRoom
               roomName = {roomName}
@@ -40,7 +48,7 @@ const App = () => {
             }
           >
             {" "}
-          </Route>
+          </Route> */}
           <Route
             path="./room:id"
             element={
