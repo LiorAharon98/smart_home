@@ -20,13 +20,13 @@ const App = () => {
       <Title/>
         <Routes>
           <Route
-            path="./"
+            path="https://lioraharon98.github.io/smart_home"
             element={<HomePageRoom index2={index} setIndex={setIndex} setSpesificRoom={setSpesificRoom} room={rooms} />}
           >
             {" "}
           </Route>
           <Route
-            path="./createroom"
+            path="https://lioraharon98.github.io/smart_home/createroom"
             element={
               <CreateRoom
               roomName = {roomName}
