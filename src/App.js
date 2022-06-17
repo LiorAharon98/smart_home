@@ -4,7 +4,7 @@ import CreateRoom from "./componente/CreateRoom";
 import SpesificRoom from "./componente/SpesificRoom";
 import HomePageRoom from "./componente/HomePageRoom"
 import Title from "./componente/Title";
-
+import "./componente/style.css"
 const App = () => {
   const [roomName, setRoomName] = useState("");
   const [roomType, setRoomType] = useState("");
