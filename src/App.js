@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import {Route, Routes, BrowserRouter } from "react-router-dom";
 import CreateRoom from "./componente/CreateRoom";
 import SpesificRoom from "./componente/SpesificRoom";
-import HomePageRoom from "./componente/HomePageRoom";
-// import Title from "./componente/Title";
+import HomePageRoom from "./componente/HomePageRoom"
+import Title from "./componente/Title";
 
 const App = () => {
   const [roomName, setRoomName] = useState("");
@@ -16,16 +16,16 @@ const App = () => {
   return (
     <div>
       <BrowserRouter>
-      {/* <Title/>
       <CreateRoom
               roomName = {roomName}
               roomProducts={roomProducts}
-                setRooms={setRooms}
-                room={CreatedRoom}
-                setRoomName={setRoomName}
-                setRoomType={setRoomType}
-                setRoomColor={setRoomColor}
-              /> */}
+              setRooms={setRooms}
+              room={CreatedRoom}
+              setRoomName={setRoomName}
+              setRoomType={setRoomType}
+              setRoomColor={setRoomColor}
+              />
+              <Title/> 
         <Routes>
           <Route
             path="./"
