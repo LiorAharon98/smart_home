@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import {Route, Routes, BrowserRouter } from "react-router-dom";
+import CreateRoom from "./componente/CreateRoom";
+import SpesificRoom from "./componente/SpesificRoom";
+import HomePageRoom from "./componente/HomePageRoom";
+import Title from "./componente/Title";
 
-import CreateRoom from "./componente/SmartHome2/CreateRoom"
-import SpesificRoom from "./componente/SmartHome2/SpesificRoom";
-import HomePageRoom from "./componente/SmartHome2/HomePageRoom";
-import Title from "./componente/SmartHome2//Title";
-import Test from "./componente/SmartHome2/Test";
 const App = () => {
   const [roomName, setRoomName] = useState("");
   const [roomType, setRoomType] = useState("");

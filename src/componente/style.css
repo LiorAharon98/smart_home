@@ -1,5 +1,5 @@
 body{
-  background-image: url("../../../public/pictures/smartHomeBackground.jpg");
+  background-image: url("/smart_home/public/pictures/smartHomeBackground.jpg");
 }
 #title{
   margin-left: 46%;
