@@ -34,7 +34,7 @@ const AddedProducts = ({ CreatedRoom, rooms, index2, roomProducts, setRoomProduc
         <option value="stereo">stereo</option>
       </select>
 
-      <Link to={"/"}>
+      <Link to={"./"}>
         <button id="addProductsSpesificRoom"
           
           onClick={() => {

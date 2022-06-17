@@ -5,7 +5,7 @@ import Rooms from "./Rooms";
 const HomePageRoom = ({ index2, setIndex, room, setSpesificRoom }) => {
   return (
     <div>
-    <Link to={"/createroom"}>
+    <Link to={"./createroom"}>
         <button id="addRoomBtn" >Add Room!</button>
       </Link>
 

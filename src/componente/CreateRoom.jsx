@@ -30,7 +30,7 @@ const CreateRoom = ({ roomName, setRooms, room, setRoomName, setRoomType, setRoo
         type="text"
         placeholder="roomColor"
       />
-      <Link to={"/"}>
+      <Link to={"./"}>
         <button
           id="createRoomBtn"
           onClick={() => {

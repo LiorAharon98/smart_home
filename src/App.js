@@ -20,13 +20,13 @@ const App = () => {
       <Title/>
         <Routes>
           <Route
-            path="/"
+            path="./"
             element={<HomePageRoom index2={index} setIndex={setIndex} setSpesificRoom={setSpesificRoom} room={rooms} />}
           >
             {" "}
           </Route>
           <Route
-            path="/createroom"
+            path="./createroom"
             element={
               <CreateRoom
               roomName = {roomName}
@@ -42,7 +42,7 @@ const App = () => {
             {" "}
           </Route>
           <Route
-            path="/room:id"
+            path="./room:id"
             element={
               <SpesificRoom
                 CreatedRoom={CreatedRoom}
