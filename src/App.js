@@ -16,18 +16,18 @@ const App = () => {
 
   return (
     <div>
-      <BrowserRouter>
+      <BrowserRouter basename="/smart_home">
       <Title/>
         <Routes>
   
           <Route
-            path="/smart_home/"
+            path="/"
             element={<HomePageRoom index2={index} setIndex={setIndex}  room={rooms} />}
           >
             {" "}
           </Route>
           {<Route
-            path="/smart_home/createroom"
+            path="/createroom"
             element={
               <CreateRoom
               roomName = {roomName}
@@ -43,7 +43,7 @@ const App = () => {
             {" "}
           </Route> }
           <Route
-            path="/smart_home/room:id"
+            path="/room:id"
             element={
               <SpesificRoom
                 CreatedRoom={CreatedRoom}
