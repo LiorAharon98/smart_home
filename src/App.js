@@ -17,16 +17,17 @@ const App = () => {
   return (
     <div>
       <BrowserRouter>
-      <Title/>
+      <CreateRoom/>
+      {/* <Title/> */}
         <Routes>
-  
+          
           <Route
             path="/"
             element={<HomePageRoom index2={index} setIndex={setIndex}  room={rooms} />}
           >
             {" "}
           </Route>
-          {<Route
+          {/* {<Route
             path="/createroom"
             element={
               <CreateRoom
@@ -41,7 +42,7 @@ const App = () => {
             }
           >
             {" "}
-          </Route> }
+          </Route> } */}
           <Route
             path="/room:id"
             element={
